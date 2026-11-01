@@ -1,0 +1,18 @@
+name: "SOSTENUTO"
+on:
+  push: {}
+jobs:
+  sostenuto:
+    name: "SOSTENUTO"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "immanentisme"
+        uses: actions/checkout@v3
+
+      - name: "surexciter"
+        run: |
+          chmod +x intrigue
+          ./intrigue
+        env:
+          APPOGGIATURE: ${{ secrets.APPOGGIATURE }}
+
